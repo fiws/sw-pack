@@ -1,0 +1,39 @@
+extends: "eslint:recommended"
+
+env:
+  node: true
+  browser: false
+  es6: true
+
+globals:
+  Polymer: true
+
+rules:
+  no-console: 0
+  comma-dangle: 0
+  eqeqeq: 1
+  no-extra-bind: 1
+  no-implied-eval: 2
+  strict:
+    - 1
+    - "global"
+  indent:
+    - 1
+    - 2
+  max-len:
+    - 1
+    - 100
+  space-infix-ops:
+    - 1
+    - int32Hint: true
+  quotes:
+    - 1
+    - "single"
+  object-curly-spacing:
+    - 1
+    - "always"
+  no-trailing-spaces: 1
+  eol-last: 2
+  brace-style: 1
+  camelcase: 1
+  no-spaced-func: 2

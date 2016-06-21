@@ -1,0 +1,31 @@
+{
+  "name": "sw-pack",
+  "version": "0.1.0",
+  "description": "Generate service workers for web-app deployment with offline-first support",
+  "main": "sw-packager.js",
+  "scripts": {
+    "test": "npm run lint && ava",
+    "start": "ws -p 32167 -d ./demo",
+    "lint": "eslint ./*.js"
+  },
+  "keywords": [
+    "service-worker",
+    "offline",
+    "cache",
+    "release"
+  ],
+  "author": "Filip Weiss <me@fiws.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "eslint": "^2.13.1",
+    "local-web-server": "^1.2.6",
+    "mz": "^2.4.0",
+    "nyc": "^6.6.1",
+    "tempfile": "^1.1.1"
+  },
+  "dependencies": {
+    "got": "^6.3.0",
+    "preprocess": "^3.1.0"
+  }
+}

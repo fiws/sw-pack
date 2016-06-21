@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./demo.css" charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <h1>sw-pack demo page</h1>
+      <h2>demo</h2>
+    </div>
+    <script type="text/javascript">
+      navigator.serviceWorker.register('service-worker.js').then((reg) => {
+        reg.onupdatefound = function() {
+          var installingWorker = reg.installing;
+          console.log('service worker updating');
+          installingWorker.onstatechange = () => {
+            console.log(installingWorker);
+          };
+        };
+      }).catch(function(e) {
+        console.error('Error during service worker registration:', e);
+      });
+      var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+      document.body.appendChild(pattern.canvas())
+    </script>
+  </body>
+</html>

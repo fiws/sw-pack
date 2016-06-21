@@ -1,0 +1,10 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: 'Roboto', 'Helvetica';
+  font-weight: 100;
+  text-align: center;
+  overflow: hidden;
+}

@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: 'Roboto', 'Helvetica';
+  font-weight: 100;
+  text-align: center;
+  overflow: hidden;
+}
+
+canvas{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#demo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+h1, h2{
+  text-shadow: 0 1px 3px black;
+}
