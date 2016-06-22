@@ -3,6 +3,8 @@ sw-pack
 
 Generate service workers for web-app deployment with offline-first support.
 
+Only supports node 6+
+
 ## Usage
 
 ```javascript
