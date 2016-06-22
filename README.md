@@ -1,5 +1,6 @@
 sw-pack
 =======
+[![Build Status](https://travis-ci.org/fiws/sw-pack.png?branch=master)](https://travis-ci.org/fiws/sw-pack) [![Dependency Status](https://david-dm.org/fiws/sw-pack.svg)](https://david-dm.org/fiws/sw-pack)
 
 Generate service workers for web-app deployment with offline-first support.
 
